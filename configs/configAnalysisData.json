@@ -1,0 +1,33 @@
+        "ccdb-url": "http://alice-ccdb.cern.ch",
+        "ccdb-path": "Users/lm",
+        "cfgAddSEPHistogram": "barrel,vertexing,flow",
+        "cfgFlatTables": "false",
+        "cfgUseKFVertexing": "false",
+        "cfgUseRemoteField": "false",
+        "cfgMagField": "5.0",
+        "ccdburl": "http://alice-ccdb.cern.ch",
+        "grpmagPath": "GLO/Config/GRPMagField",
+        "cfgUseAbsDCA": "false",
+        "cfgPropToPCA": "false",
+        "processDecayToEESkimmed": "true",
+        "processDecayToEESkimmedWithCov": "false",
+        "processDecayToEEVertexingSkimmed": "false",
+        "processDecayToEEPrefilterSkimmed": "false",
+        "processDecayToMuMuSkimmed": "true",
+        "processDecayToMuMuVertexingSkimmed": "false",
+        "processVnDecayToEESkimmed": "false",
+        "processVnDecayToMuMuSkimmed": "false",
+        "processElectronMuonSkimmed": "false",
+        "processAllSkimmed": "false",
+        "processDummy": "false"
+    },
+    "analysis-dilepton-hadron": {
+        "cfgLeptonCuts": "jpsiPID1",
+        "cfgAddDileptonHadHistogram": "dilepton-hadron-correlation",
+        "processSkimmed": "false",
+        "processDummy": "true"
+    },
+    "internal-dpl-aod-global-analysis-file-sink": "",
+    "internal-dpl-aod-writer": ""
+}
+                                                                                                                                                               94,1          Bot
