@@ -7,24 +7,25 @@
         "start-value-enumeration": "0",
         "end-value-enumeration": "-1",
         "step-value-enumeration": "1",
-        "aod-file": "../reducedAod_data.root",
+        "aod-file": "/groups/smi/alice/elisa/analysis/LMee/LMee_Run3/reducedAod_data.root",
         "aod-reader-json": "configs/readerConfiguration_reducedEvent.json"
     },
     "internal-dpl-injected-dummy-sink": "",
     "analysis-event-selection": {
-        "cfgMixingVars": "Vtx3",
+	"cfgMixingVars": "Centrality1",
         "cfgEventCuts": "eventStandardNoINT7",
         "cfgQA": "true",
-        "cfgAddEventHistogram": "trigger,cent,muon",
+        "cfgAddEventHistogram": "trigger,cent,emc",
         "processSkimmed": "true",
         "processDummy": "false"
     },
     "analysis-track-selection": {
-        "cfgTrackCuts": "jpsiO2MCdebugCuts",
-        "cfgQA": "true",
-        "cfgAddTrackHistogram": "dca,its,tpcpid,tofpid",
+        "cfgTrackCuts": "lmee_eNSigmaRun3_strongNSigE",
+        "cfgQA": "false",
+        "cfgAddTrackHistogram": "kine, dca,its,tpcpid,tofpid",
         "cfgPrefilterCutId": "32",
         "ccdb-url": "http://alice-ccdb.cern.ch",
+	"ccdb-no-later-than":"1698368013581",
         "ccdb-path-tpc": "Users/i/iarsene/Calib/TPCpostCalib",
         "cfgTPCpostCalib": "false",
         "cfgRunPeriods": "LHC23zzh",
@@ -34,8 +35,8 @@
     },
     "analysis-prefilter-selection": {
         "cfgPrefilterPairCut": "",
-        "processBarrelSkimmed": "true",
-        "processDummy": "false"
+        "processBarrelSkimmed": "false",
+        "processDummy": "true"
     },
     "analysis-muon-selection": {
         "cfgMuonCuts": "muonQualityCuts",
@@ -45,7 +46,7 @@
         "processDummy": "true"
     },
     "analysis-event-mixing": {
-        "cfgTrackCuts": "jpsiO2MCdebugCuts",
+        "cfgTrackCuts": "lmee_eNSigmaRun3_strongNSigE",
         "cfgMuonCuts": "muonQualityCuts",
         "cfgMixingDepth": "1",
         "cfgAddEventMixingHistogram": "barrel,vertexing,flow",
@@ -57,7 +58,7 @@
         "processDummy": "false"
     },
     "analysis-same-event-pairing": {
-        "cfgTrackCuts": "jpsiO2MCdebugCuts",
+        "cfgTrackCuts": "lmee_eNSigmaRun3_strongNSigE",
         "cfgMuonCuts": "muonQualityCuts",
         "cfgPairCuts": "",
         "ccdb-url": "http://alice-ccdb.cern.ch",

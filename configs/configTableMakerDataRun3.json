@@ -7,7 +7,7 @@
         "start-value-enumeration": "0",
         "end-value-enumeration": "-1",
         "step-value-enumeration": "1",
-        "aod-file": "@infiles/run3pilotMC_LHC21k6.txt"   
+        "aod-file": "/groups/smi/alice/elisa/analysis/LMee/LMee_Run3/Data/LHC23zzh/AO2D.root"   
     },
     "internal-dpl-aod-global-analysis-file-sink": "",
     "internal-dpl-aod-writer": "",
@@ -21,7 +21,7 @@
         "isRun2MC": "false"
     },
     "event-selection-task": {
-        "syst": "pp",
+        "syst": "PbPb",
         "muonSelection": "0",
         "customDeltaBC": "300",
         "isMC": "false",
@@ -258,15 +258,15 @@
     },
     "table-maker": {
         "cfgEventCuts": "eventStandardNoINT7",
-        "cfgBarrelTrackCuts": "jpsiO2MCdebugCuts2,jpsiO2MCdebugCuts3,jpsiO2MCdebugCuts,kaonPID2",
+        "cfgBarrelTrackCuts": "lmee_eNSigmaRun3_strongNSigE",
         "cfgMuonCuts": "muonQualityCuts,muonTightQualityCutsForTests",
         "cfgAddEventHistogram": "triggerall,cent",
         "cfgAddTrackHistogram": "dca,its,tpcpid,tofpid",
         "cfgAddMuonHistogram": "muon",
-        "cfgBarrelLowPt": "0.5",
-        "cfgMuonLowPt": "0.5",
-        "cfgMinTpcSignal": "50",
-        "cfgMaxTpcSignal": "200",
+        "cfgBarrelLowPt": "0.1",
+        "cfgMuonLowPt": "0.9",
+        "cfgMinTpcSignal": "30",
+        "cfgMaxTpcSignal": "300",
         "cfgQA": "true",
         "cfgDetailedQA": "true",
         "cfgIsRun2": "false",
@@ -274,7 +274,7 @@
         "ccdb-url": "http://alice-ccdb.cern.ch",
         "ccdb-path-tpc": "Users/i/iarsene/Calib/TPCpostCalib",
         "cfgTPCpostCalib": "false",
-        "cfgRunPeriods": "LHC22f",
+        "cfgRunPeriods": "LHC23zzh",
         "processFull": "false",
         "processFullWithCov": "false",
         "processFullWithCovAndEventFilter": "false",
@@ -301,6 +301,6 @@
         "processAmbiguousBarrelOnly": "false",
         "processBarrelOnlyWithQvector": "false",
         "processMuonOnlyWithQvector": "false",
-        "processOnlyBCs": "false"
+        "processOnlyBCs": "true"
     }
 }
