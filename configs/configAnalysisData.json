@@ -7,7 +7,7 @@
         "start-value-enumeration": "0",
         "end-value-enumeration": "-1",
         "step-value-enumeration": "1",
-        "aod-file": "reducedAod_data.root",
+        "aod-file": "../reducedAod_data.root",
         "aod-reader-json": "configs/readerConfiguration_reducedEvent.json"
     },
     "internal-dpl-injected-dummy-sink": "",
@@ -27,34 +27,34 @@
         "ccdb-url": "http://alice-ccdb.cern.ch",
         "ccdb-path-tpc": "Users/i/iarsene/Calib/TPCpostCalib",
         "cfgTPCpostCalib": "false",
-        "cfgRunPeriods": "LHC22f",
+        "cfgRunPeriods": "LHC23zzh",
         "processSkimmed": "true",
         "processSkimmedWithCov": "false",
         "processDummy": "false"
     },
     "analysis-prefilter-selection": {
         "cfgPrefilterPairCut": "",
-        "processBarrelSkimmed": "false",
-        "processDummy": "true"
+        "processBarrelSkimmed": "true",
+        "processDummy": "false"
     },
     "analysis-muon-selection": {
         "cfgMuonCuts": "muonQualityCuts",
         "cfgQA": "true",
         "cfgAddMuonHistogram": "muon",
-        "processSkimmed": "true",
-        "processDummy": "false"
+        "processSkimmed": "false",
+        "processDummy": "true"
     },
     "analysis-event-mixing": {
         "cfgTrackCuts": "jpsiO2MCdebugCuts",
         "cfgMuonCuts": "muonQualityCuts",
         "cfgMixingDepth": "1",
         "cfgAddEventMixingHistogram": "barrel,vertexing,flow",
-        "processBarrelSkimmed": "false",
+        "processBarrelSkimmed": "true",
         "processMuonSkimmed": "false",
         "processBarrelMuonSkimmed": "false",
         "processBarrelVnSkimmed": "false",
         "processMuonVnSkimmed": "false",
-        "processDummy": "true"
+        "processDummy": "false"
     },
     "analysis-same-event-pairing": {
         "cfgTrackCuts": "jpsiO2MCdebugCuts",
@@ -75,7 +75,7 @@
         "processDecayToEESkimmedWithCov": "false",
         "processDecayToEEVertexingSkimmed": "false",
         "processDecayToEEPrefilterSkimmed": "false",
-        "processDecayToMuMuSkimmed": "true",
+        "processDecayToMuMuSkimmed": "false",
         "processDecayToMuMuVertexingSkimmed": "false",
         "processVnDecayToEESkimmed": "false",
         "processVnDecayToMuMuSkimmed": "false",
