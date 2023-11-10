@@ -7,12 +7,12 @@
         "start-value-enumeration": "0",
         "end-value-enumeration": "-1",
         "step-value-enumeration": "1",
-        "aod-file": "/groups/smi/alice/elisa/analysis/LMee/LMee_Run3/reducedAod_data.root",
+        "aod-file": "/groups/smi/alice/elisa/analysis/LMee/LMee_Run3/reducedAod.root",
         "aod-reader-json": "configs/readerConfiguration_reducedEvent.json"
     },
     "internal-dpl-injected-dummy-sink": "",
     "analysis-event-selection": {
-	"cfgMixingVars": "Centrality1",
+	"cfgMixingVars": "Vtx3",
         "cfgEventCuts": "eventStandardNoINT7",
         "cfgQA": "true",
         "cfgAddEventHistogram": "trigger,cent,emc",
@@ -21,7 +21,7 @@
     },
     "analysis-track-selection": {
         "cfgTrackCuts": "lmee_eNSigmaRun3_strongNSigE",
-        "cfgQA": "false",
+        "cfgQA": "true",
         "cfgAddTrackHistogram": "kine, dca,its,tpcpid,tofpid",
         "cfgPrefilterCutId": "32",
         "ccdb-url": "http://alice-ccdb.cern.ch",
@@ -46,9 +46,8 @@
         "processDummy": "true"
     },
     "analysis-event-mixing": {
-        "cfgTrackCuts": "lmee_eNSigmaRun3_strongNSigE",
-        "cfgMuonCuts": "muonQualityCuts",
-        "cfgMixingDepth": "1",
+	"cfgTrackCuts": "lmee_eNSigmaRun3_strongNSigE", 
+        "cfgMixingDepth": "200000",
         "cfgAddEventMixingHistogram": "barrel,vertexing,flow",
         "processBarrelSkimmed": "true",
         "processMuonSkimmed": "false",

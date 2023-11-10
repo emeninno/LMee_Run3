@@ -7,7 +7,7 @@
         "start-value-enumeration": "0",
         "end-value-enumeration": "-1",
         "step-value-enumeration": "1",
-        "aod-file": "/groups/smi/alice/elisa/analysis/LMee/LMee_Run3/Data/LHC23zzh/AO2D.root"   
+        "aod-file": "@/groups/smi/alice/elisa/analysis/LMee/LMee_Run3/Data/LHC23zzh/file.txt"   
     },
     "internal-dpl-aod-global-analysis-file-sink": "",
     "internal-dpl-aod-writer": "",
